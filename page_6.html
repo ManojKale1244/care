@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palliative Care</title>
+  <link rel="stylesheet" href="page_6.css">
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palliative Care</title>
+  </head>
+
+<body>
+  <header>
+    <h1>Palliative Care</h1>
+    <nav>
+      <ul>
+        <li><a href="#pain">Pain Management</a></li>
+        <li><a href="#emotional">Emotional Support</a></li>
+        <li><a href="#counseling">Family Counseling</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="pain">
+    <h2>Pain Management</h2>
+    <p>Palliative care focuses on relieving pain and managing symptoms to improve the quality of life for patients with
+      serious illnesses.</p>
+  </section>
+
+  <section id="emotional">
+    <h2>Emotional Support</h2>
+    <p>Emotional support services offer counseling and therapy to help patients and families cope with the challenges of
+      serious illnesses.</p>
+  </section>
+
+  <section id="counseling">
+    <h2>Family Counseling</h2>
+    <p>Family counseling provides guidance and support to families navigating the emotional and practical challenges of
+      caring for a loved one.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Palliative Healthcare. All rights reserved.</p>
+  </footer>
+  <script>
+    (function () {
+      if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+        window.chatbase = (...args) => {
+          if (!window.chatbase.q) window.chatbase.q = [];
+          window.chatbase.q.push(args);
+        };
+
+        window.chatbase = new Proxy(window.chatbase, {
+          get(target, prop) {
+            if (prop === "q") return target.q;
+            return (...args) => target(prop, ...args);
+          }
+        });
+      }
+
+      const onLoad = () => {
+        const script = document.createElement("script");
+        script.src = "https://www.chatbase.co/embed.min.js";
+        script.id = "KBRsDqoRlElfukr3dfXQ-";
+        script.setAttribute("data-domain", "www.chatbase.co"); // Changed from script.domain to setAttribute
+        document.body.appendChild(script);
+      };
+
+      if (document.readyState === "complete") {
+        onLoad();
+      } else {
+        window.addEventListener("load", onLoad);
+      }
+    })();
+  </script>
+</body>
+
+</html>

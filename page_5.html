@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rehabilitative Care</title>
+  <link rel="stylesheet" href="page_5.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>Rehabilitative Care</h1>
+    <nav>
+      <ul>
+        <li><a href="#physical">Physical Therapy</a></li>
+        <li><a href="#occupational">Occupational Therapy</a></li>
+        <li><a href="#speech">Speech Therapy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="physical">
+    <h2>Physical Therapy</h2>
+    <p>Physical therapy helps individuals recover strength, mobility, and function after injury or surgery through
+      personalized exercises.</p>
+  </section>
+
+  <section id="occupational">
+    <h2>Occupational Therapy</h2>
+    <p>Occupational therapy focuses on enabling people to participate in daily activities by improving their physical,
+      cognitive, and motor skills.</p>
+  </section>
+
+  <section id="speech">
+    <h2>Speech Therapy</h2>
+    <p>Speech therapy assists individuals in overcoming speech, language, and swallowing difficulties through targeted
+      exercises and techniques.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rehabilitative Healthcare. All rights reserved.</p>
+  </footer>
+  <script>
+    (function () {
+      if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+        window.chatbase = (...args) => {
+          if (!window.chatbase.q) window.chatbase.q = [];
+          window.chatbase.q.push(args);
+        };
+
+        window.chatbase = new Proxy(window.chatbase, {
+          get(target, prop) {
+            if (prop === "q") return target.q;
+            return (...args) => target(prop, ...args);
+          }
+        });
+      }
+
+      const onLoad = () => {
+        const script = document.createElement("script");
+        script.src = "https://www.chatbase.co/embed.min.js";
+        script.id = "KBRsDqoRlElfukr3dfXQ-";
+        script.setAttribute("data-domain", "www.chatbase.co"); // Changed from script.domain to setAttribute
+        document.body.appendChild(script);
+      };
+
+      if (document.readyState === "complete") {
+        onLoad();
+      } else {
+        window.addEventListener("load", onLoad);
+      }
+    })();
+  </script>
+</body>
+
+</html>
